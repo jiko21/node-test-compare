@@ -1,8 +1,8 @@
-import {describe, test, mock} from 'node:test';
-import assert from 'node:assert/strict';
-import { someFunc1 } from './mock.mjs';
-import { mockFn } from './mockfn.mjs';
-import mocked from './mocked.mjs';
+const { describe, test, mock } = require('node:test');
+const assert = require('node:assert/strict');
+const { someFunc1 } = require('./mock');
+const { mockFn } = require('./mockfn');
+const mocked = require('./mocked');
 
 describe('mock sample', () => {
   test('mock already existing object method', () => {
